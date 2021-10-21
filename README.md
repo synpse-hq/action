@@ -18,6 +18,14 @@ This action interacts with [Synpse](https://synpse.net) platform to perform "git
 
 **Required** - path to the file where the application manifest is placed. You can read more about application manifests here: https://docs.synpse.net/synpse-core/applications/overview
 
+## `key`
+
+**Required** - create a service account in your Synpse project here with "Contributor" role: https://cloud.synpse.net/service-accounts. Once created, go to your repository settings and add the secret as `SYNPSE_ACCESS_KEY`:
+
+![image](https://user-images.githubusercontent.com/9080105/138366072-101a2783-1d51-4739-a655-c2cb9726783c.png)
+
+Once added, you will be able to reference it from your worfklow.
+
 ## `controllerUri`
 
 **Required** - URL of the Synpse server. Default `https://cloud.synpse.net/api`
