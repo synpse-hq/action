@@ -1,5 +1,5 @@
 
-name: 'Synpse '
+name: 'Deploy to Synpse'
 description: 'Synpse application update action'
 inputs:
   key:
