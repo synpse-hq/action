@@ -12,7 +12,7 @@ inputs:
     required: true
   namespace:
     description: 'Namespace'
-    default: ''
+    default: 'default'
     required: true
   filepath:
     description: 'Path to your synpse application yaml (for example "apps/my-app.yml")'
