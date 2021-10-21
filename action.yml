@@ -1,5 +1,8 @@
 
 name: 'Deploy to Synpse'
+branding:
+  icon: 'box'  
+  color: 'purple'
 description: 'Synpse application update action'
 inputs:
   key:
