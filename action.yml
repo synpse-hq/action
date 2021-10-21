@@ -21,7 +21,7 @@ inputs:
   controllerUri:
     description: 'Synpse URL (defaults to the cloud service)'
     default: 'https://cloud.synpse.net/api'
-    required: false
+    required: true
 outputs:
   status: # id of output
     description: 'Update status'
