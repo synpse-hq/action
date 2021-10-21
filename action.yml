@@ -1,0 +1,42 @@
+
+name: 'Synpse '
+description: 'Synpse application update action'
+inputs:
+  key:
+    description: 'API key (get yours from https://cloud.synpse.net/service-accounts)'
+    default: ''
+    required: true
+  project:
+    description: 'Project ID'
+    default: ''
+    required: true
+  namespace:
+    description: 'Namespace'
+    default: ''
+    required: true
+  filepath:
+    description: 'Path to your synpse application yaml (for example "apps/my-app.yml")'
+    default: ''
+    required: true
+  controllerUri:
+    description: 'Synpse URL (defaults to the cloud service)'
+    default: 'https://cloud.synpse.net/api'
+    required: false
+outputs:
+  status: # id of output
+    description: 'Update status'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - deploy
+    - --project
+    - ${{ inputs.project }}
+    - --namespace
+    - ${{ inputs.namespace }}
+    - --access-key
+    - ${{ inputs.key }}
+    - --controller-uri 
+    - ${{ inputs.controllerUri }}
+    - -f
+    - ${{ inputs.filepath }}
