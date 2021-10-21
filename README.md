@@ -1,6 +1,8 @@
 # Synpse application update action
 
-This action interacts with [Synpse](https://synpse.net) platform to perform "git push to update" workflows.
+> Synpse is an end-to-end platform to manage your device fleet that can grow to hundreds of thousands of devices, perform OTA software updates, collect metrics, logs, deploy your containerized applications and facilitate tunnel-based SSH access to any of your device. You can find a [Quick Start here](https://docs.synpse.net/start-here/quick-start-web-user).
+
+This action interacts with [Synpse](https://synpse.net) platform to perform "git push to update" workflows. If you don't have a Synpse account, you can create one here: https://cloud.synpse.net/.
 
 ## Inputs
 
