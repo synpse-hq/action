@@ -50,7 +50,7 @@ jobs:
         uses: actions/checkout@v1
       - name: Deploy or update application to Synpse
         id: hello
-        uses: synpse-hq/action@v0.1
+        uses: synpse-hq/action@v1.1
         with:
           key: ${{ secrets.SYNPSE_ACCESS_KEY }}
           project: karolis-homelab
